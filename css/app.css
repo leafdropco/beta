@@ -233,3 +233,5 @@ md-content.md-default-theme {
 .h8{padding-bottom: 5px; font-size: 16px; font-weight: 500;}
 .storeMap{height: 200px;}
 .viewProduct{background-color: #358673;color: #fff;height: 100%;}
+.orderProduct{background-color: #358673;color: #fff;font-size: 36px;cursor:pointer;}
+.productNotice{background-color: #fff;padding: 20px;}
