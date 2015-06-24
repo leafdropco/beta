@@ -1,5 +1,7 @@
 body{color: rgba(119, 119, 119, 0.9);}]
-
+.md-focused {
+    background-color: #eee;
+}
 .ld md-input-container {
     display: flex;
     position: relative;
@@ -229,4 +231,5 @@ md-content.md-default-theme {
 .paneText{font-size: 12px;}
 .aboutText{font-size: 14px;}
 .h8{padding-bottom: 5px; font-size: 16px; font-weight: 500;}
-.storeMap{height: auto;}
+.storeMap{height: 200px;}
+.viewProduct{background-color: #358673;color: #fff;height: 100%;}
