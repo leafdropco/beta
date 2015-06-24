@@ -3,8 +3,8 @@
 		    <img class="slide slide-animation" ng-repeat="slide in slides"
 		        ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}" width="100%" >
 
-		    <a class="arrow prev" href="#" ng-click="nextSlide()"></a>
-		    <a class="arrow next" href="#" ng-click="prevSlide()"></a>
+		    <a class="arrow prev" ng-click="nextSlide()"></a>
+		    <a class="arrow next" ng-click="prevSlide()"></a>
 		    <nav class="nav" layout="row" layout-align="center" hide-sm>
 		        <div class="wrapper">
 		            <ul class="dots">

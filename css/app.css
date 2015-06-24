@@ -1,3 +1,4 @@
+body{color: rgba(119, 119, 119, 0.9);}]
 
 .ld md-input-container {
     display: flex;
@@ -192,11 +193,19 @@ md-content.md-default-theme {
 
 
 
-
-.storePic{
+.storePicBg{
 	background-color: #358673;
 	height: 20vw;
 	width: 20vw;
+}
+.storePic{
+    width: 15vw;
+    height: 15vw;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
 }
 .storeBanner{
 	background-color: #358673;
@@ -210,3 +219,13 @@ md-content.md-default-theme {
 .bottomM{
 	margin-bottom: 10px;
 }
+.ltPane{
+    background-color: #fff;
+    width: 20vw;
+}
+.rtPane{
+    background-color: #fff;
+}
+.paneText{font-size: 12px;}
+.aboutText{font-size: 14px;}
+.h8{padding-bottom: 5px; font-size: 16px; font-weight: 500;}
