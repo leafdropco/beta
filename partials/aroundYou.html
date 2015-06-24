@@ -1,0 +1,26 @@
+<div class="md-whiteframe-z1">
+	<div layout="row" layout-align="center center" layout-padding class="aroundYouTitle">
+		<ng-md-icon style="fill:#fff;" size="35"icon="language" class="textShdw"></ng-md-icon>  <div class="aroundYouText" flex> <span class="textShdw">Dispensaries Around You </span></div>
+	</div>
+	<div layout="row" layout-align="center center" layout-padding class="aroundYou">
+		<div class="searchRadiusText" flex="25"><span class="textShdw">Slide to change search radius</span></div>
+		<div flex>
+			<div layout>
+			  <md-slider flex class="md-accent" md-discrete ng-model="query" step="1" min="1" max="15" aria-label="rating">
+			  </md-slider>
+			</div>
+	    </div>
+	</div>
+</div>
+<div class="md-whiteframe-z1">
+<md-list ng-controller="dispCtrl">
+	<md-list-item class="md-3-line" ng-repeat="stores in desp | filter:query | limitTo:5 | orderBy:miles" ng-class-odd="'odd'">
+	<img ng-src="{{stores.image}}" class="md-avatar" alt="{{stores.name}}" />
+	<div class="md-list-item-text">
+	  <h3>{{ stores.name }}</h3>
+	  <h4>State: {{ stores.state }}</h4>
+	  <p>Miles Away: {{ stores.rating }}</p>
+	</div>
+	<md-divider></md-divider>
+</md-list-item>
+</div>

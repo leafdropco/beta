@@ -1,0 +1,212 @@
+
+.ld md-input-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 0px 0px 0px;
+}
+.ld md-sidenav {
+	height: 100%;
+  fill: #737373;
+  ng-md-icon {
+    position: static;
+    top: 5px; // adjust for svg viewbox
+  }
+}
+.ld a {
+	text-decoration: none;
+	color: #000;
+}
+.sideNavTitle{
+	color: #fff;
+	font-size: 14px;
+}
+
+md-toolbar.md-default-theme.md-hue-3 {
+    color: #fff;
+}
+md-content.md-default-theme {
+    background-color: #F4F4F4;
+}
+.md-subheader.md-default-theme {
+    color: rgba(0, 0, 0, 0.54);
+    background-color: transparent;
+}
+
+.proManBg{
+	background-color: #ddd;
+}
+
+
+
+
+.homeBg{
+	background-color: #ccc;
+}
+.aroundYou{
+	background-color: #358673;
+	color: #fff;
+}
+.aroundYouTitle{
+	background-color: #43D4B3;
+	color: #fff;
+}
+.searchRadiusText{
+	font-size: 12px;
+	font-weight: 100;
+}
+.aroundYouText{
+	font-size: 16px;
+	font-weight: 300;
+}
+.textShdw{
+	text-shadow: rgba(0, 0, 0, 0.25) 1px 1px,
+    rgba(0, 0, 0, 0.25) 2px 2px,
+    rgba(0, 0, 0, 0.25) 3px 3px;
+	overflow: hidden;
+}
+.odd{
+	background-color: rgba(255,255,255,0.4);
+}
+
+/*SLIDER*/
+.featSlide{
+	background-color: #666;
+	height: 400px;
+	width: 100%;
+}
+.slider {
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    background: #E6E6E6 none repeat scroll 0% 0%;
+}
+.slide {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.arrow {
+    position: absolute;
+    z-index: 1002;
+    display: block;
+    top: 50%;
+    margin-top: -35px;
+    width: 36px;
+    height: 71px;
+    outline: medium none;
+    cursor: pointer;
+    background: transparent url("../img/blank.gif") no-repeat scroll 0% 0%;
+}
+.arrow.prev {
+    opacity: 1;
+    left: 20px;
+    background-image: url("../img/paddle_prev_999.png");
+    transition: all 0.2s linear 0s;
+    z-index: 3;
+}
+.arrow.next {
+    opacity: 1;
+    right: 20px;
+    background-image: url("../img/paddle_next_999.png");
+    transition: all 0.2s linear 0s;
+}
+.nav {
+    padding-top: 10px;
+}
+.dots .dot {
+    position: relative;
+    margin: 0px 8px;
+    width: 12px;
+    height: 12px;
+}
+.dots .dot a {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 6px;
+    height: 6px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: #358673 none repeat scroll 0% 0%;
+    border: 1px solid transparent;
+    outline: medium none;
+    box-shadow: none;
+    border-radius: 50%;
+    opacity: 0.6;
+    transition: background-color 0.25s ease 0s, border-color 0.25s ease 0s;
+}
+.nav .dot, .nav .dot a {
+    display: inline-block;
+}
+.nav ul {
+    margin: 0px;
+    width: 100%;
+}
+.btmBar {
+    height: 35%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    top: 240px;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 200;
+}
+.delPicBox{
+	background-color: rgba(255,255,255,0.2);
+	height: 100%;
+}
+.deliveryText{
+	font-size: 25px;
+	color: #43D4B3;
+}
+.availableText{
+	font-size: 15px;
+	color: #00b71e;
+}
+.notAvailableText{
+	font-size: 15px;
+	color: #d60000;
+}
+.notAvailableBg{
+	background-color: rgba(0,0,0,0.3);
+	height: 50%;
+}
+.availableBg{
+	background-color: rgba(255,255,255,0.1);
+	height: 50%;
+}
+
+.whiteBg{
+	background-color: #fff;
+}
+
+.resultsTitle{
+	color: #ccc;
+}
+.results{
+	color: #43D4B3;
+}
+
+
+
+
+.storePic{
+	background-color: #358673;
+	height: 20vw;
+	width: 20vw;
+}
+.storeBanner{
+	background-color: #358673;
+	height: 20vw;
+	color: #fff;
+	font-size: 35px;
+}
+.rightM{
+	margin-right: 10px;
+}
+.bottomM{
+	margin-bottom: 10px;
+}

@@ -1,0 +1,106 @@
+  <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
+        <md-toolbar hide-gt-md class="md-accent md-hue-2" layout-align="center end">
+          <span>
+            <md-button ng-click="toggleSidenav('left')" hide-gt-md aria-label="Menu">
+              <ng-md-icon style="fill:#fff;" icon="close"></ng-md-icon>
+            </md-button>
+          </span>
+          
+        </md-toolbar>
+        <md-toolbar class="md-hue-3" layout-align="center center"> 
+          <div layout="column" class="inset sideNavTitle">
+            <div class=""><span class="textShdw">Welcome User</span></div>
+          </div>
+        </md-toolbar>
+        <md-list>
+        <md-item>
+          <a ng-href="#home">
+            <md-item-content md-ink-ripple layout="row" layout-align="start center">
+              <div class="inset">
+                <ng-md-icon icon="home"></ng-md-icon>
+              </div>
+               <span> Home </span>
+            </md-item-content>
+          </a>
+        </md-item>
+        <md-item>
+          <a ng-href="#orders">
+            <md-item-content md-ink-ripple layout="row" layout-align="start center">
+              <div class="inset">
+                <ng-md-icon icon="add_shopping_cart"></ng-md-icon>
+              </div>
+               <span> Orders </span>
+            </md-item-content>
+          </a>
+        </md-item>
+        <md-item>
+          <a ng-href="#dispensaries">
+            <md-item-content md-ink-ripple layout="row" layout-align="start center">
+              <div class="inset">
+                <ng-md-icon icon="store"></ng-md-icon>
+              </div>
+               <span> Dispensaries </span>
+            </md-item-content>
+          </a>
+        </md-item>
+        <!-- <md-item>
+          <a>
+            <md-item-content md-ink-ripple layout="row" layout-align="start center">
+              <div class="inset">
+                <ng-md-icon icon="wallet_giftcard"></ng-md-icon>
+              </div>
+               <span> Specials </span>
+            </md-item-content>
+          </a>
+        </md-item> -->
+
+        <div class="proManBg">
+          <md-subheader>Profile Management</md-subheader>
+          <md-divider></md-divider>
+          <md-item>
+            <a>
+              <md-item-content md-ink-ripple layout="row" layout-align="start center">
+                <div class="inset">
+                  <ng-md-icon icon="create"></ng-md-icon>
+                </div>
+                 <span> Edit Your Information </span>
+              </md-item-content>
+            </a>
+          </md-item>
+          <md-item>
+            <a>
+              <md-item-content md-ink-ripple layout="row" layout-align="start center">
+                <div class="inset">
+                  <ng-md-icon icon="security"></ng-md-icon>
+                </div>
+                 <span> Privacy Policy </span>
+              </md-item-content>
+            </a>
+          </md-item>
+          <md-item>
+            <a>
+              <md-item-content md-ink-ripple layout="row" layout-align="start center">
+                <div class="inset">
+                  <ng-md-icon icon="undo"></ng-md-icon>
+                </div>
+                 <span> Sign Out </span>
+              </md-item-content>
+            </a>
+          </md-item>
+        </div>
+
+        <md-subheader>Admin</md-subheader>
+        <md-divider></md-divider>
+        <md-item>
+          <a>
+            <md-item-content md-ink-ripple layout="row" layout-align="start center">
+              <div class="inset">
+                <ng-md-icon icon="keyboard_alt"></ng-md-icon>
+              </div>
+              <div class="inset">admin
+              </div>
+            </md-item-content>
+          </a>
+        </md-item>
+      </md-list>
+  </md-sidenav>

@@ -1,0 +1,41 @@
+{
+  "name": "leafdrop",
+  "main": "leafdrop.js",
+  "version": "0.0.0",
+  "description": "Bower Material Angular Project",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "Material",
+    "AngularJS",
+    "LeafDrop"
+  ],
+  "authors": [
+    "Michael Graham"
+  ],
+  "license": "MIT",
+  "homepage": "leafdrop.co",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+        "angular": "^1.3.15",
+        "angular-mocks": "^1.3.13",
+      "angular-material":"^0.9.6",
+      "angular-material-icons":"^0.4.0",
+        "jquery": "1.10.2",
+        "bootstrap": "^3.3.4",
+        "angular-route": "1.3.13",
+        "angular-resource": "1.3.13",
+        "angular-animate": "1.3.13",
+      "angular-bootstrap": "^0.12.0",
+      "eventEmitter":"^4.2.11",
+      "angular-sanitize": "~1.3.15",
+      "angular-soundmanager2": "*"
+      }
+}
