@@ -27,6 +27,10 @@ var leafdrop = angular.module("leafdrop",['ngMaterial','ngMdIcons','ngAnimate','
       when('/store', {
         templateUrl: 'views/store.html',
         controller: 'StoreController'
+    }).
+      when('/product', {
+        templateUrl: 'views/product.html',
+        controller: 'ProductController'
     })
 }])
 .controller('OrdersController',['$scope', function($scope) {
@@ -35,6 +39,8 @@ var leafdrop = angular.module("leafdrop",['ngMaterial','ngMdIcons','ngAnimate','
 	$scope.message = 'This is Add new order screen';
 }]).controller('StoreController',['$scope', function($scope) {
 	$scope.message = 'This is Add new order screen';
+}]).controller('ProductController',['$scope', function($scope) {
+    $scope.message = 'This is Add new order screen';
 }])
 
 .animation('.slide-animation', function () {
