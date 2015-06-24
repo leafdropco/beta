@@ -13,4 +13,7 @@ var app = express()
 	}).end();
 })
 
-http.createServer(app).listen(8080);
+var port = process.env.PORT || 8080;
+var server = app.listen(port, function() {
+    console.log('Listening on port %d', port);
+});
