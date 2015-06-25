@@ -6,7 +6,7 @@
 		    </md-input-container>
 	 	 </div>
 	 	 <div flex="20" layout="row" layout-padding layout-align="center center">
-	 	 	<md-button class="md-raised md-primary">Search</md-button>
+	 	 	<md-button class="md-raised md-primary" ng-click="search(searchOrders)">Search</md-button>
 	 	 </div>
 	 </div>	
 </div>
@@ -18,14 +18,17 @@
 	</div>	
 </div>
 <div class="md-whiteframe-z1" layout-padding>
-<md-list ng-controller="dispCtrl">
-	<md-list-item class="md-3-line" ng-repeat="stores in desp | filter:searchOrders | limitTo:25 | orderBy:name" ng-class-odd="'odd'">
-	<img ng-src="{{stores.image}}" class="md-avatar" alt="{{stores.name}}" />
-	<div class="md-list-item-text">
-	  <h3>{{ stores.name }}</h3>
-	  <h4>State: {{ stores.state }}</h4>
-	  <p>Miles Away: {{ stores.rating }}</p>
-	</div>
-	<md-divider></md-divider>
+<md-list>
+	<md-list-item class="md-3-line" ng-repeat="product in results | filter:searchOrders | limitTo:25 | orderBy:name" ng-class-odd="'odd'">
+        <a ng-href="/#/product/{{product.UrlName}}" style="padding-top:10px;width:100%;" layout="row" layout-align="center center">
+            <div flex class="md-list-item-text">
+                <h3>{{ product.Name }}</h3>
+                <p>Rating: {{ product.Rating }}</p>
+            </div>
+            <div style="width:100px">
+                <img ng-src="{{store.starImage}}" width="100%" />
+            </div>
+        </a>
+        <md-divider></md-divider>
 </md-list-item>
 </div>

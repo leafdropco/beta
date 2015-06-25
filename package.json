@@ -18,6 +18,9 @@
   "license": "ISC",
   "dependencies": {
     "express": "^5.0.0-alpha.1",
-    "stylus": "^0.50.0"
+    "body-parser": "*",
+    "stylus": "^0.50.0",
+    "concat-stream": "*",
+    "underscore": "*"
   }
 }

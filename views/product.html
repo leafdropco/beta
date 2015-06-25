@@ -1,7 +1,8 @@
 <div layout-padding>
-	 <div layout="row">
-	 	 <div class="md-whiteframe-z1 storeBanner bottomM" layout-padding layout-align="center center" layout="row" flex>
-	 	 	Eugreen
+	 <div layout="row" style="background-color:#F4F4F4">
+	 	 <div class="md-whiteframe-z1 storeBanner bottomM" layout-padding layout-align="center center" layout="row" flex
+              style="background:url({{product.photos[0].fullSize}}) 50% 50% no-repeat;background-size:100% auto">
+	 	 	<span style="text-shadow:2px 2px 3px #000000">{{product.name}}</span>
 	 	 </div>
 	 </div>
 
@@ -9,7 +10,7 @@
 	 	<div class="md-whiteframe-z1 ltPane rightM bottomM" layout-padding layout="row">
 	 	 	<div layout="column" style="width:100%;" layout-padding>
 	 	 		<div class="productStrain bottomM">
-	 	 			<div class="h8">Kush</div>
+	 	 			<div class="h8">{{product.name}}</div>
 	 	 			<md-divider></md-divider>
 		 	 		<div layout-padding class="paneText">
 		 	 			Very potent and powerful strain. Makes you feel energetic.
@@ -28,28 +29,18 @@
 	 	 			<div class="h8">Type</div>
 	 	 			<md-divider></md-divider>
 	 	 			<div layout-padding class="paneText">
-		 	 			Sativa
-	 	 			</div>
-	 	 		</div>
-	 	 		<div class="productServices bottomM">
-	 	 			<div class="h8">Services</div>
-	 	 			<md-divider></md-divider>
-	 	 			<div layout-padding class="paneText">
-		 	 			<div class="storeDeliver">Delivery: Yes</div>
-		 	 			<div class="storePickUp">Pick-Up: No</div>
+		 	 			{{product.category}}
 	 	 			</div>
 	 	 		</div>
 	 	 	</div>
 	 	</div>
 	 	<div class="md-whiteframe-z1 rtPane bottomM" layout-padding layout="column" flex>
-	 	 	<span layout-padding>About <strong>OG Kush</strong></span>
+	 	 	<span layout-padding>About <strong>{{product.name}}</strong></span>
 	 	 	<md-divider></md-divider>
 	 	 	<div layout-padding class="aboutText">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ullamcorper vulputate condimentum. Aliquam ac dignissim nunc. Sed a felis et elit pellentesque cursus. Integer sed cursus ipsum. Aenean quis nulla sed sem gravida mattis non quis ante. Proin imperdiet est nisi, vitae sodales est consectetur in. Phasellus rutrum magna justo, eget volutpat velit tincidunt eget. Curabitur aliquet ornare eros, eu euismod magna bibendum non.</p>
-
-				<p>Vestibulum faucibus ligula in orci blandit, placerat ornare velit ullamcorper. Vestibulum id dolor nibh. Phasellus venenatis, magna ut luctus efficitur, quam tortor tristique tellus, eu semper lacus lorem at velit. Integer dictum lobortis tellus a luctus. Suspendisse potenti. Integer sollicitudin erat eget tellus ullamcorper tincidunt eu ut libero. Ut mollis purus massa, quis molestie ex malesuada eget. Nullam efficitur, nisi sed pulvinar ullamcorper, tellus ligula imperdiet est, a aliquam nisl nibh sed metus.</p>
-
-				<p>Fusce sed massa ex. Nam quis eros maximus, iaculis odio a, tempor nibh. Morbi sed sem sagittis mauris bibendum tincidunt fringilla quis massa. Duis at libero finibus, tristique tortor at, pellentesque enim. Nullam dolor nisl, dignissim quis ipsum ut, mollis dapibus odio. Maecenas sapien lacus, tristique non erat eget, venenatis ullamcorper neque. Aliquam varius leo eu faucibus eleifend. Mauris gravida vel lectus ut molestie. Fusce fermentum et orci in lacinia. Vestibulum tincidunt tempor ullamcorper.</p> 
+				<p>
+                    {{product.descriptionPlain}}
+                </p>
 	 	 	</div>
 	 	</div>
 	</div>
@@ -61,13 +52,20 @@
 	 	 			<div class="h8">Effects</div>
 	 	 			<md-divider></md-divider>
 		 	 		<div layout-padding class="paneText">
-		 	 			Happy,
-						Relaxed,
-						Euphoric,
-						Uplifted,
-						Hungry
+		 	 			<span ng-repeat="effect in product.effects">
+                              {{effect.name}}<span ng-if="$index < product.effects.length-1">,&nbsp;</span>
+                        </span>
 	 	 			</div>
 	 	 		</div>
+               <div class="productEffects bottomM">
+                   <div class="h8">Flavors</div>
+                   <md-divider></md-divider>
+                   <div layout-padding class="paneText">
+                       <span ng-repeat="flavor in product.flavors">
+                           {{flavor.name}}<span ng-if="$index < product.flavors.length-1">,&nbsp;</span>
+                       </span>
+                   </div>
+               </div>
 	 	 		<div class="productMed bottomM">
 	 	 			<div class="h8">Medical</div>
 	 	 			<md-divider></md-divider>

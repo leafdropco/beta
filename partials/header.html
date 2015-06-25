@@ -23,9 +23,9 @@
       </h3>
       <md-input-container md-theme="input" flex>
         <label>&nbsp;</label>
-        <input ng-model="search.who" placeholder="enter search">
+        <input ng-model="searchQuery" placeholder="enter search">
       </md-input-container>
-      <md-button aria-label="Search" ng-click="showSearch = !showSearch">
+      <md-button aria-label="Search" ng-click="search(searchQuery)">
         <ng-md-icon style="fill:#fff;" icon="search"></ng-md-icon>
       </md-button>
     </div>
